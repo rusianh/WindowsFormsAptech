@@ -55,5 +55,11 @@ namespace DemoBuoi1
             frmCalculator calc = new frmCalculator();
             calc.Show();
         }
+
+        private void Exercise1_Click(object sender, EventArgs e)
+        {
+            Exercise1 ex = new Exercise1();
+            ex.Show();
+        }
     }
 }

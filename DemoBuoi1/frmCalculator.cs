@@ -17,14 +17,29 @@ namespace DemoBuoi1
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button_Click(object sender, EventArgs e)
         {
+            string nutDuocBam = ((Button)sender).Text;
+            if(nutDuocBam!= "=")
+                textBox1.Text += nutDuocBam;
+            else
+            {
+                //Tinh ra ket qua
+                try
+                {
+                Jace.CalculationEngine ce = new Jace.CalculationEngine();
+                String ketQua = ce.Calculate(textBox1.Text.Replace("x","*")).ToString();
+                textBox1.Text += "=" + ketQua;
+                MessageBox.Show(textBox1.Text);
+                textBox1.Text = "";
 
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Bieu thuc " + textBox1.Text + " Khong Hop Le");
+                    textBox1.Text = "";
+                }
+            }
         }
     }
 }
