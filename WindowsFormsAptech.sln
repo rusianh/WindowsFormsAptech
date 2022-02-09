@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoBuoi1", "DemoBuoi1\DemoBuoi1.csproj", "{E9DFDD7F-B4D4-4C34-A1AA-3AFEC911E6AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTapBuoi1", "DemoBuoi1\BaiTapBuoi1.csproj", "{E9DFDD7F-B4D4-4C34-A1AA-3AFEC911E6AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoT2", "DemoT2\DemoT2.csproj", "{9331D356-15B9-4CC4-88F0-AE2E232C97D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E9DFDD7F-B4D4-4C34-A1AA-3AFEC911E6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9DFDD7F-B4D4-4C34-A1AA-3AFEC911E6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9DFDD7F-B4D4-4C34-A1AA-3AFEC911E6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9331D356-15B9-4CC4-88F0-AE2E232C97D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9331D356-15B9-4CC4-88F0-AE2E232C97D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9331D356-15B9-4CC4-88F0-AE2E232C97D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9331D356-15B9-4CC4-88F0-AE2E232C97D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
