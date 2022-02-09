@@ -70,7 +70,14 @@ namespace DemoBuoi1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            listBox1.Items.Add(textBox1.Text);
+            listBox2.Items.Add(textBox2.Text);
+        }
 
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            foreach (string s in listBox1.SelectedItems.OfType<string>().ToList())
+                listBox1.Items.Remove(s);
         }
     }
 }
