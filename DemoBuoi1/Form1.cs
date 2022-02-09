@@ -67,5 +67,10 @@ namespace DemoBuoi1
             Exercise2 ex = new Exercise2();
             ex.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

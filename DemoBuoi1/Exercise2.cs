@@ -79,5 +79,10 @@ namespace DemoBuoi1
             foreach (string s in listBox1.SelectedItems.OfType<string>().ToList())
                 listBox1.Items.Remove(s);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
