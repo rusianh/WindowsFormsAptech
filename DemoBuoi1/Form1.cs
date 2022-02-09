@@ -61,5 +61,11 @@ namespace DemoBuoi1
             Exercise1 ex = new Exercise1();
             ex.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Exercise2 ex = new Exercise2();
+            ex.Show();
+        }
     }
 }

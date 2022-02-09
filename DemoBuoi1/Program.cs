@@ -14,6 +14,7 @@ namespace DemoBuoi1
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1()); // file chính của chương trình ( đảm bảo nó luôn luôn chạy, ko bao giờ đc đóng)

@@ -63,6 +63,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(12, 23);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(327, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -411,6 +412,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Exercise1";
             this.Text = "Exercise1";
+            this.Load += new System.EventHandler(this.Exercise1_Load);
             this.Click += new System.EventHandler(this.button_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
