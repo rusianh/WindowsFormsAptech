@@ -29,5 +29,13 @@ namespace DemoT2CodeLai
             frm.ShowDialog();
             this.Show();
         }
+
+        private void cach2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCach2 frm = new frmCach2();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
     }
 }

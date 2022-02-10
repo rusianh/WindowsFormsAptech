@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.baiTap2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thoatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cach2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -38,6 +39,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.baiTap2ToolStripMenuItem,
+            this.cach2ToolStripMenuItem,
             this.thoatToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -58,6 +60,13 @@
             this.thoatToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.thoatToolStripMenuItem.Text = "&Thoat";
             this.thoatToolStripMenuItem.Click += new System.EventHandler(this.thoatToolStripMenuItem_Click);
+            // 
+            // cach2ToolStripMenuItem
+            // 
+            this.cach2ToolStripMenuItem.Name = "cach2ToolStripMenuItem";
+            this.cach2ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.cach2ToolStripMenuItem.Text = "Cach 2";
+            this.cach2ToolStripMenuItem.Click += new System.EventHandler(this.cach2ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -80,6 +89,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem baiTap2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem thoatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cach2ToolStripMenuItem;
     }
 }
 
