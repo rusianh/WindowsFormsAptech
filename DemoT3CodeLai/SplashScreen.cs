@@ -24,19 +24,22 @@ namespace DemoT3CodeLai
 
         private void SplashScreen_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (progressBar1.Value < progressBar1.Maximum) {
-                progressBar1.Value += 2;
-            } else {
+                progressBar1.Value += 10;
+            }
+            else {
                 timer1.Stop();
                 //Chuyen form
-                frmMainForm frmMain = new frmMainForm();
-                this.Hide();
-                frmMain.Show();
+                //frmMainForm frmMain = new frmMainForm();
+                //this.Hide();
+                //frmMain.ShowDialog();
+                //Dong Form
+                this.Close();
             }
         }
     }
