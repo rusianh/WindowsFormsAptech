@@ -45,7 +45,7 @@ namespace DemoT3CodeLai
         {
             if( string.IsNullOrEmpty(txtTenNhom.Text)) {
                 MessageBox.Show("Khong duoc de trong ten nhom");
-                txtTenNhom.Focus(); 
+                txtTenNhom.Focus();  
                 return;
             }
             if(tvNhomQuyen.SelectedNode == null) 
