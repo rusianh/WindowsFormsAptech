@@ -54,5 +54,22 @@ namespace DemoT3CodeLai
                 tvNhomQuyen.SelectedNode.Nodes.Add(txtTenNhom.Text);
             }
         }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(tabControl1.SelectedTab == tpPhanQuyen) {
+                lblThongTinNguoiDung.Text = String.Format("Ten: {0} / Nguoi Dung {1}", txtNguoiDung.Text, txtTenDangNhap.Text);
+            }
+            tvDSQuyen.Nodes.Clear();
+            foreach (TreeNode tn in tvNhomQuyen.Nodes) {
+                tvDSQuyen.Nodes.Add((TreeNode)tn.Clone());
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        { 
+            tvDSChon.Nodes.Add((TreeNode)tvDSQuyen.SelectedNode.Clone());
+            tvDSQuyen.SelectedNode.Remove();
+        }
     }
 }
