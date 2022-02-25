@@ -72,6 +72,40 @@ namespace DemoT3CodeLai
             //tvDSChon.Nodes.Add((TreeNode)tvDSQuyen.SelectedNode.Clone());
             //tvDSQuyen.SelectedNode.Remove();
 
+            //2 viec xu ly chinh 
+            //1. Tao mot tree ao chua toan bo tu goc den nhanh dang duoc chon
+            //2. So sanh tree ao voi tree dang co voi tvDSchon
+
+            TreeNode nodeDaChon = tvDSChon.SelectedNode;
+            string fpath = nodeDaChon.FullPath;
+            string[] pathArr = fpath.Split('\\');
+            TreeView tempTree = new TreeView();
+            foreach(TreeNode node in tvDSChon.Nodes) {
+                if(node.FullPath == pathArr[0]) {
+                    TreeNode foundNode = (TreeNode)node.Clone();
+                    tempTree.Nodes.Add(foundNode);
+                    AddTree(pathArr, 1, foundNode);
+                    break;
+                }
+            }
+        }
+
+        void AddTree(string[] pathArr, int level, TreeNode node) 
+        {
+            if (level >= pathArr.Length) return;
+            string[] pathArrHienTai = new string[level + 1];
+            Array.Copy(pathArr, pathArrHienTai, level + 1);
+            string pathHienTai = string.Join("\\", pathArrHienTai);
+            while (true) {
+                bool timThay = false;
+                int i = 0;
+                for ( ; i<node.Nodes.Count;i++) {
+                    break;
+                }
+                if(i >= node.Nodes.Count) {
+
+                }
+            }
         }
 
         StringBuilder sb = new StringBuilder();
