@@ -68,8 +68,27 @@ namespace DemoT3CodeLai
 
         private void btnAdd_Click(object sender, EventArgs e)
         { 
-            tvDSChon.Nodes.Add((TreeNode)tvDSQuyen.SelectedNode.Clone());
-            tvDSQuyen.SelectedNode.Remove();
+            
+            //tvDSChon.Nodes.Add((TreeNode)tvDSQuyen.SelectedNode.Clone());
+            //tvDSQuyen.SelectedNode.Remove();
+
+        }
+
+        StringBuilder sb = new StringBuilder();
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            sb.Clear();
+            foreach (TreeNode tn in tvDSChon.Nodes)
+                BuildPath(tn);
+            MessageBox.Show("Cac quyen da chon la: \n" + sb.ToString());
+        }
+        
+        void BuildPath(TreeNode tn)
+        {
+            if (tn.Nodes.Count > 0)
+                foreach (TreeNode t in tn.Nodes) BuildPath(t);
+            else sb.AppendLine(tn.FullPath);
+            
         }
     }
 }

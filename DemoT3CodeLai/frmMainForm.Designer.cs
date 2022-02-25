@@ -27,21 +27,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Q1");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Q2.1");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Q2", new System.Windows.Forms.TreeNode[] {
-            treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Q3.1");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Q3.2.1");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Q3.2.2");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Q3.2", new System.Windows.Forms.TreeNode[] {
-            treeNode5,
-            treeNode6});
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Q3.3");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Q3", new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode7,
-            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Q1");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Q2.1");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Q2", new System.Windows.Forms.TreeNode[] {
+            treeNode11});
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Q3.1");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Q3.2.1");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Q3.2.2");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Q3.2", new System.Windows.Forms.TreeNode[] {
+            treeNode14,
+            treeNode15});
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Q3.3");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Q3", new System.Windows.Forms.TreeNode[] {
+            treeNode13,
+            treeNode16,
+            treeNode17});
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpNhomQuyen = new System.Windows.Forms.TabPage();
             this.tvNhomQuyen = new System.Windows.Forms.TreeView();
@@ -101,28 +101,28 @@
             // 
             this.tvNhomQuyen.Location = new System.Drawing.Point(237, 23);
             this.tvNhomQuyen.Name = "tvNhomQuyen";
-            treeNode1.Name = "Node0";
-            treeNode1.Text = "Q1";
-            treeNode2.Name = "Node3";
-            treeNode2.Text = "Q2.1";
-            treeNode3.Name = "Node1";
-            treeNode3.Text = "Q2";
-            treeNode4.Name = "Node5";
-            treeNode4.Text = "Q3.1";
-            treeNode5.Name = "Node8";
-            treeNode5.Text = "Q3.2.1";
-            treeNode6.Name = "Node9";
-            treeNode6.Text = "Q3.2.2";
-            treeNode7.Name = "Node6";
-            treeNode7.Text = "Q3.2";
-            treeNode8.Name = "Node7";
-            treeNode8.Text = "Q3.3";
-            treeNode9.Name = "Node4";
-            treeNode9.Text = "Q3";
+            treeNode10.Name = "Node0";
+            treeNode10.Text = "Q1";
+            treeNode11.Name = "Node3";
+            treeNode11.Text = "Q2.1";
+            treeNode12.Name = "Node1";
+            treeNode12.Text = "Q2";
+            treeNode13.Name = "Node5";
+            treeNode13.Text = "Q3.1";
+            treeNode14.Name = "Node8";
+            treeNode14.Text = "Q3.2.1";
+            treeNode15.Name = "Node9";
+            treeNode15.Text = "Q3.2.2";
+            treeNode16.Name = "Node6";
+            treeNode16.Text = "Q3.2";
+            treeNode17.Name = "Node7";
+            treeNode17.Text = "Q3.3";
+            treeNode18.Name = "Node4";
+            treeNode18.Text = "Q3";
             this.tvNhomQuyen.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode3,
-            treeNode9});
+            treeNode10,
+            treeNode12,
+            treeNode18});
             this.tvNhomQuyen.Size = new System.Drawing.Size(372, 332);
             this.tvNhomQuyen.TabIndex = 2;
             this.tvNhomQuyen.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -316,7 +316,7 @@
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnAbout_Click);
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // frmMainForm
             // 
