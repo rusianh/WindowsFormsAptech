@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoT3CodeLai", "DemoT3Code
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoT4CodeLai", "DemoT4CodeLai\DemoT4CodeLai.csproj", "{D38CA782-89B4-40B6-BA8D-536B83C7AF20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoT6KetNoiDataBase", "DemoT6KetNoiDataBase\DemoT6KetNoiDataBase.csproj", "{26A1EF91-2173-4202-AB63-594ED43D6E41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D38CA782-89B4-40B6-BA8D-536B83C7AF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D38CA782-89B4-40B6-BA8D-536B83C7AF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D38CA782-89B4-40B6-BA8D-536B83C7AF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26A1EF91-2173-4202-AB63-594ED43D6E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26A1EF91-2173-4202-AB63-594ED43D6E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26A1EF91-2173-4202-AB63-594ED43D6E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26A1EF91-2173-4202-AB63-594ED43D6E41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
